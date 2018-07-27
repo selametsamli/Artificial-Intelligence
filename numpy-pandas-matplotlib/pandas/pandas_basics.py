@@ -8,10 +8,18 @@ dataFrame1 = pd.DataFrame(dictionary)
 
 
 head = dataFrame1.head() #ilk 5 değerleri gösterir.
-print(head)
+print("head\n",head)
 
 print("--------------------")
 tail = dataFrame1.tail()#son 5 değeri gösterir
+print ("tail\n",tail)
+print("--------------------")
+#pandas basic method
 
-print (tail)
-
+print("columns\n",dataFrame1.columns)
+print("--------------------")
+print("info\n",dataFrame1.info())
+print("--------------------")
+print("dtypes\n",dataFrame1.dtypes)
+print("--------------------")
+print("describe\n",dataFrame1.describe()) #numeric feature = columns(age,maas)
